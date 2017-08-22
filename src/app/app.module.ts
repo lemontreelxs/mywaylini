@@ -1,9 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+/**
+ * 自定义模块
+ */
 import { AppRouterModule } from './app-router.module';
 import { CoreModule } from './core/core.module';
+/**
+ * 自定义组件
+ */
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [

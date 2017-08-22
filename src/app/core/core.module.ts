@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 /**
  * 自定义
  */
+import { ShareModule } from '../share/share.module';
 import { FirstPageComponent } from './first-page/first-page.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    ShareModule
   ],
   declarations: [FirstPageComponent],
   exports: [FirstPageComponent]
