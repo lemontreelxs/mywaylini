@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRouterModule } from './app-router.module';
-import { FirstPageComponent } from './first-page/first-page.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    FirstPageComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    CoreModule,
     AppRouterModule
   ],
   providers: [],
