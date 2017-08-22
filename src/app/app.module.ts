@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppRouterModule } from './app-router.module';
 import { CoreModule } from './core/core.module';
 /**
- * 自定义组件
+ * 根组件
  */
 import { AppComponent } from './app.component';
 

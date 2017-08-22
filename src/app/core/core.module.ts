@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Optional, SkipSelf } from '@angular/core';
 /**
  * 自定义
  */
@@ -12,4 +12,11 @@ import { FirstPageComponent } from './first-page/first-page.component';
   declarations: [FirstPageComponent],
   exports: [FirstPageComponent]
 })
-export class CoreModule { }
+export class CoreModule {
+  constructor( @Optional() @SkipSelf() parentModule: CoreModule) {
+    if (parentModule) {
+      throw new Error('核心模块只能加载一次');
+    }
+  }
+
+}
