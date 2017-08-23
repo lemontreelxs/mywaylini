@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MdButtonModule, MdToolbarModule, MdMenuModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdButtonModule, MdToolbarModule, MdMenuModule, MdIconModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -15,7 +15,8 @@ import { MdButtonModule, MdToolbarModule, MdMenuModule } from '@angular/material
     ReactiveFormsModule,
     MdButtonModule,
     MdToolbarModule,
-    MdMenuModule
+    MdMenuModule,
+    MdIconModule
   ]
 })
 export class ShareModule { }
