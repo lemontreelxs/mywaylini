@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MdButtonModule, MdToolbarModule, MdMenuModule } from '@angular/material';
 @NgModule({
   imports: [
     CommonModule
@@ -8,7 +9,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   exports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MdButtonModule,
+    MdToolbarModule,
+    MdMenuModule
   ]
 })
 export class ShareModule { }
