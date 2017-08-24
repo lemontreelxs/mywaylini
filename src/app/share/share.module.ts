@@ -3,10 +3,19 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdButtonModule, MdToolbarModule, MdMenuModule, MdIconModule, MdSidenavModule } from '@angular/material';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MdButtonModule,
+    MdToolbarModule,
+    MdMenuModule,
+    MdIconModule,
+    MdSidenavModule
   ],
   exports: [
     CommonModule,
@@ -17,7 +26,9 @@ import { MdButtonModule, MdToolbarModule, MdMenuModule, MdIconModule, MdSidenavM
     MdToolbarModule,
     MdMenuModule,
     MdIconModule,
-    MdSidenavModule
-  ]
+    MdSidenavModule,
+    NavbarComponent
+  ],
+  declarations: [NavbarComponent]
 })
 export class ShareModule { }
