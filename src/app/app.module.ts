@@ -9,6 +9,7 @@ import { CoreModule } from './core/core.module';
  * 根组件
  */
 import { AppComponent } from './app.component';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     CoreModule,
-    AppRouterModule
+    AppRouterModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
