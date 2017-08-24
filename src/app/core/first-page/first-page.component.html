@@ -1,8 +1,13 @@
 <md-toolbar color="primary">
-    <span>山西大学城</span>
-  
+    <button md-button><md-icon>home</md-icon>山西大学城</button>
     <!-- This fills the remaining space of the current row -->
     <span class="example-fill-remaining-space"></span>
-  
-    <span>登录</span>
-  </md-toolbar>
+    <button md-button>登录</button>
+    <md-menu #appMenu="mdMenu">
+        <button md-menu-item> 设置 </button>
+        <button md-menu-item> 帮助 </button>
+    </md-menu>
+    <button md-icon-button [mdMenuTriggerFor]="appMenu">
+             <md-icon>more_vert</md-icon>
+    </button>
+</md-toolbar>
