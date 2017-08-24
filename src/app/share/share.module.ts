@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdButtonModule, MdToolbarModule, MdMenuModule, MdIconModule, MdSidenavModule } from '@angular/material';
 import { NavbarComponent } from './navbar/navbar.component';
 
@@ -10,7 +9,6 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     CommonModule,
     RouterModule,
-    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     MdButtonModule,
@@ -21,7 +19,6 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   exports: [
     CommonModule,
-    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     MdButtonModule,
