@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MdButtonModule, MdToolbarModule, MdMenuModule, MdIconModule, MdSidenavModule } from '@angular/material';
+import { MdButtonModule, MdToolbarModule, MdMenuModule, MdIconModule, MdSidenavModule, MdCardModule } from '@angular/material';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -15,7 +15,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     MdToolbarModule,
     MdMenuModule,
     MdIconModule,
-    MdSidenavModule
+    MdSidenavModule,
+    MdCardModule
   ],
   exports: [
     CommonModule,
@@ -26,6 +27,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     MdMenuModule,
     MdIconModule,
     MdSidenavModule,
+    MdCardModule,
     NavbarComponent
   ],
   declarations: [NavbarComponent]
