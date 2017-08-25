@@ -7,7 +7,7 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 })
 export class FirstPageComponent implements OnInit {
 
-  @HostBinding('style.display') display = 'flex';
+  // @HostBinding('style.display') display = 'flex';
 
   constructor() { }
 
